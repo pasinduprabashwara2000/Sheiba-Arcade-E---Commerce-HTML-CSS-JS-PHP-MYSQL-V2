@@ -1,0 +1,36 @@
+/* Login / sign-up pages: one centred card, nothing else. */
+.auth-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 16px;
+    background: #f3f4f6;
+    font-family: "Poppins", sans-serif;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 380px;
+    padding: 32px 28px;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, .08);
+}
+
+.auth-logo { display: block; text-align: center; margin-bottom: 12px; }
+.auth-logo img { width: 72px; }
+
+.auth-card h1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.auth-card .form-label { font-size: .85rem; font-weight: 500; }
+.auth-switch { text-align: center; font-size: .85rem; margin: 20px 0 0; }
+
+/* Error / success banner (login.js and signup.js write into #alert-slot) */
+#alert-slot { position: fixed; top: 0; left: 0; right: 0; z-index: 2000; }
+#alert-slot .alert { position: static !important; margin: 0; border-radius: 0; text-align: center; }

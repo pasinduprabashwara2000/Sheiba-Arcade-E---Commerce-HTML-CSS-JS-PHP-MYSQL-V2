@@ -1,0 +1,840 @@
+ /* =========================================================
+       Sheiba Arcade - Home Page
+    ========================================================= */
+
+
+ /* =========================================================
+       Hero Heading
+    ========================================================= */
+
+.hero-heading {
+    margin: 18px 0 8px;
+    color: #111;
+    font-size: clamp(1.5rem, 3vw, 2.3rem);
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.hero-subheading {
+    max-width: 850px;
+    margin: 0 auto;
+    color: #777;
+    font-size: 0.92rem;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   Main Carousel
+   ========================================================= */
+
+#mainCarousel {
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10);
+}
+
+.carousel-banner-img {
+    width: 100%;
+    height: clamp(220px, 38vw, 500px);
+    object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 8%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 2.3rem;
+    height: 2.3rem;
+}
+
+
+/* =========================================================
+   Category Cards
+   ========================================================= */
+
+.custom-category {
+    position: relative;
+}
+
+.category-card {
+    overflow: hidden;
+    border: 1px solid #e8e8e8;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+    transition:
+            transform 0.25s ease,
+            box-shadow 0.25s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.category-card-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.category-card:hover .category-card-img {
+    transform: scale(1.04);
+}
+
+.category-card .card-body {
+    background: #fff;
+}
+
+.category-card .card-title {
+    margin: 0;
+    color: #222;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   Home Section Headings
+   ========================================================= */
+
+#about h2,
+#areas-we-serve h2,
+#faq h2,
+#top-selling h2,
+#promo-videos h2,
+#testimonials h2 {
+    color: #111;
+    font-size: clamp(1.35rem, 3vw, 2rem);
+}
+
+#about hr,
+#areas-we-serve hr,
+#faq hr,
+#top-selling hr,
+#promo-videos hr,
+#testimonials hr {
+    width: 70px !important;
+    height: 3px;
+    margin-top: 12px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #4f46e5;
+    opacity: 1;
+}
+
+
+/* =========================================================
+   About Section
+   ========================================================= */
+
+#about {
+    border-radius: 0 !important;
+}
+
+#about .about-logo {
+    width: min(100%, 360px);
+    max-height: 280px;
+    padding: 15px;
+    object-fit: contain;
+    background: #fff;
+}
+
+#about p {
+    color: #555;
+}
+
+#about .lead {
+    color: #333;
+}
+
+
+/* =========================================================
+   Areas We Serve
+   ========================================================= */
+
+#areas-we-serve {
+    background: #fff;
+}
+
+#areas-we-serve .lead {
+    color: #555;
+    font-size: 1.02rem;
+}
+
+#areas-we-serve p:not(.lead) {
+    color: #666;
+}
+
+#areas-we-serve .badge {
+    display: block;
+    padding: 9px 12px !important;
+    border: 1px solid #e2e2e2 !important;
+    border-radius: 8px;
+    color: #333 !important;
+    background-color: #fff !important;
+    font-size: 0.82rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+#areas-we-serve .badge:hover {
+    border-color: #4f46e5 !important;
+    color: #4f46e5 !important;
+    background-color: #f0effe !important;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   FAQ
+   ========================================================= */
+
+#faq {
+    border-radius: 0 !important;
+}
+
+#faq .mb-4 {
+    padding: 18px;
+    border: 1px solid #e8e8e8;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+}
+
+#faq h3 {
+    margin-bottom: 8px;
+    color: #222;
+    font-size: 1rem;
+}
+
+#faq p {
+    margin-bottom: 0;
+    color: #666;
+    font-size: 0.88rem;
+}
+
+
+/* =========================================================
+   Top Selling Products
+   ========================================================= */
+
+#top-selling {
+    background: #f8f9fc;
+}
+
+#top-selling-loading,
+#top-selling-empty {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+
+/* =========================================================
+   Top Selling Product Cards
+   ========================================================= */
+
+#top-selling-grid .card {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid #e9e9ef;
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    transition:
+            transform 0.3s ease,
+            box-shadow 0.3s ease,
+            border-color 0.3s ease;
+}
+
+#top-selling-grid .card:hover {
+    border-color: #dcd9ff;
+    box-shadow: 0 16px 35px rgba(79, 70, 229, 0.14);
+    transform: translateY(-8px);
+}
+
+
+/* =========================================================
+   Product Image
+   ========================================================= */
+
+#top-selling-grid .card img {
+    display: block;
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    background: #f5f5f8;
+    transition: transform 0.45s ease;
+}
+
+#top-selling-grid .card:hover img {
+    transform: scale(1.06);
+}
+
+
+/* =========================================================
+   Product Card Body
+   ========================================================= */
+
+#top-selling-grid .card-body {
+    position: relative;
+    padding: 18px;
+    background: #fff;
+}
+
+#top-selling-grid .card-title {
+    margin-bottom: 8px;
+    color: #222;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+#top-selling-grid .card-text {
+    margin-bottom: 12px;
+    color: #777;
+    font-size: 0.82rem;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   Product Category
+   ========================================================= */
+
+#top-selling-grid .category {
+    display: inline-block;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: #4f46e5;
+    background: #f0effe;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   Product Price
+   ========================================================= */
+
+#top-selling-grid .price {
+    color: #4f46e5;
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   Ranking Badge
+   ========================================================= */
+
+#top-selling-grid .rank-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 2;
+    padding: 6px 10px;
+    border-radius: 20px;
+    color: #333;
+    background: #fff;
+    font-size: 0.72rem;
+    font-weight: 700;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================================
+   Selling Badge
+   ========================================================= */
+
+#top-selling-grid .selling-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 9px;
+    border-radius: 20px;
+    color: #666;
+    background: #f5f5f5;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   Product Footer
+   ========================================================= */
+
+#top-selling-grid .product-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 15px;
+    padding-top: 13px;
+    border-top: 1px solid #eee;
+}
+
+
+/* =========================================================
+   View Product Button
+   ========================================================= */
+
+#top-selling-grid .view-product-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 13px;
+    border: 0;
+    border-radius: 8px;
+    color: #fff;
+    background: #4f46e5;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition:
+            background 0.25s ease,
+            transform 0.25s ease;
+}
+
+#top-selling-grid .view-product-btn:hover {
+    background: #4338ca;
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   Special PC Builds
+   ========================================================= */
+
+#promo-videos {
+    background-color: #f8f8f8 !important;
+}
+
+#promo-videos .text-muted {
+    color: #777 !important;
+}
+
+#promo-videos .ratio {
+    overflow: hidden;
+    border-radius: 14px;
+    background: #000;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+#promo-videos iframe {
+    border: 0;
+}
+
+#promo-videos .tiktok-tile {
+    min-height: 100%;
+}
+
+#promo-videos .tiktok-embed {
+    width: 100% !important;
+    min-width: 100% !important;
+    margin: 0 !important;
+}
+
+
+/* =========================================================
+   Newsletter
+   ========================================================= */
+
+#newsletter {
+    background: #fff;
+}
+
+#newsletter h2 {
+    color: #111;
+}
+
+#newsletter p {
+    color: #666;
+}
+
+.newsletter-form {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.newsletter-input {
+    min-height: 46px;
+    padding: 10px 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.newsletter-input:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 0.2rem rgba(79, 70, 229, 0.12);
+}
+
+.newsletter-btn {
+    min-height: 46px;
+    padding: 9px 22px;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    background-color: #4f46e5;
+    font-weight: 600;
+}
+
+.newsletter-btn:hover {
+    background-color: #4338ca;
+}
+
+
+/* =========================================================
+   Testimonials
+   ========================================================= */
+
+#testimonials {
+    background-color: #f8f8f8;
+}
+
+#testimonials .card {
+    height: 100%;
+    border: 1px solid #e8e8e8;
+    border-radius: 16px;
+    background-color: #fff;
+    transition:
+            transform 0.25s ease,
+            box-shadow 0.25s ease;
+}
+
+#testimonials .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.10) !important;
+}
+
+.testimonial-avatar {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 3px solid #f0effe;
+}
+
+#testimonials .card-text {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+#testimonials strong {
+    color: #222;
+    font-size: 0.9rem;
+}
+
+
+/* =========================================================
+   Home Page Footer Adjustments
+   ========================================================= */
+
+.footer {
+    margin-top: 0;
+}
+
+
+/* =========================================================
+   Tablet
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+    .hero-heading {
+        margin-top: 14px;
+    }
+
+    .hero-subheading {
+        padding: 0 15px;
+        font-size: 0.85rem;
+    }
+
+    #mainCarousel {
+        width: auto;
+        margin-right: 12px;
+        margin-left: 12px;
+    }
+
+    .carousel-banner-img {
+        height: 270px;
+    }
+
+    .category-card-img {
+        height: 160px;
+    }
+
+    #top-selling-grid .card img {
+        height: 190px;
+    }
+}
+
+
+/* =========================================================
+   Mobile
+   ========================================================= */
+
+@media (max-width: 575px) {
+
+    .hero-heading {
+        padding: 0 12px;
+        font-size: 1.35rem;
+    }
+
+    .hero-subheading {
+        padding: 0 15px;
+        font-size: 0.78rem;
+        line-height: 1.5;
+    }
+
+    #mainCarousel {
+        margin-top: 12px !important;
+        border-radius: 12px;
+    }
+
+    .carousel-banner-img {
+        height: 190px;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+
+    .custom-category {
+        margin-top: 1.5rem !important;
+    }
+
+    .category-card {
+        border-radius: 12px;
+    }
+
+    .category-card-img {
+        height: 120px;
+    }
+
+    .category-card .card-body {
+        padding: 8px 5px !important;
+    }
+
+    .category-card .card-title {
+        font-size: 0.78rem;
+        line-height: 1.3;
+    }
+
+    #about .lead,
+    #areas-we-serve .lead {
+        font-size: 0.92rem;
+    }
+
+    #about p,
+    #areas-we-serve p,
+    #faq p {
+        font-size: 0.83rem;
+    }
+
+    #areas-we-serve .badge {
+        font-size: 0.74rem;
+    }
+
+    #faq .mb-4 {
+        padding: 14px;
+    }
+
+    #faq h3 {
+        font-size: 0.92rem;
+    }
+
+    #promo-videos .row {
+        row-gap: 1.5rem !important;
+    }
+
+    .newsletter-form {
+        padding: 0 10px;
+    }
+
+    .newsletter-btn {
+        width: 100%;
+    }
+
+
+    /* -----------------------------------------
+       Top Selling - Mobile
+       ----------------------------------------- */
+
+    #top-selling-grid .card {
+        border-radius: 14px;
+    }
+
+    #top-selling-grid .card img {
+        height: 160px;
+    }
+
+    #top-selling-grid .card-body {
+        padding: 14px;
+    }
+
+    #top-selling-grid .card-title {
+        font-size: 0.88rem;
+    }
+
+    #top-selling-grid .card-text {
+        font-size: 0.76rem;
+    }
+
+    #top-selling-grid .price {
+        font-size: 1rem;
+    }
+
+    #top-selling-grid .rank-badge {
+        top: 8px;
+        left: 8px;
+        padding: 5px 8px;
+        font-size: 0.65rem;
+    }
+
+    #top-selling-grid .selling-badge {
+        padding: 4px 7px;
+        font-size: 0.65rem;
+    }
+
+    #top-selling-grid .product-footer {
+        gap: 6px;
+        margin-top: 12px;
+        padding-top: 10px;
+    }
+
+    #top-selling-grid .view-product-btn {
+        padding: 6px 10px;
+        font-size: 0.7rem;
+    }
+}
+
+
+/* =========================================================
+   Extra Small Devices
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .carousel-banner-img {
+        height: 170px;
+    }
+
+    .category-card-img {
+        height: 105px;
+    }
+
+    .category-card .card-title {
+        font-size: 0.7rem;
+    }
+
+    .hero-heading {
+        font-size: 1.2rem;
+    }
+
+    #top-selling-grid .card img {
+        height: 140px;
+    }
+
+    #top-selling-grid .card-body {
+        padding: 12px;
+    }
+
+    #top-selling-grid .card-title {
+        font-size: 0.82rem;
+    }
+
+    #top-selling-grid .price {
+        font-size: 0.92rem;
+    }
+}
+
+
+/* =========================================================
+   Reduced Motion
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}
+
+ /* =========================================================
+    Product Condition Badge
+    ========================================================= */
+
+ #top-selling-grid .product-condition {
+     position: absolute;
+     top: 12px;
+     right: 12px;
+     z-index: 3;
+     padding: 5px 9px;
+     border-radius: 20px;
+     color: #fff;
+     font-size: 0.68rem;
+     font-weight: 600;
+     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+ }
+
+ #top-selling-grid .product-condition-new {
+     background: #28a745;
+ }
+
+ #top-selling-grid .product-condition-used {
+     background: #6c757d;
+ }
+
+
+ /* =========================================================
+    Product Image
+    ========================================================= */
+
+ #top-selling-grid .product-card-img {
+     display: block;
+     width: 100%;
+     height: 210px;
+     object-fit: cover;
+     background: #f5f5f8;
+     transition: transform 0.45s ease;
+ }
+
+ #top-selling-grid .card:hover .product-card-img {
+     transform: scale(1.06);
+ }
+
+
+ /* =========================================================
+    Mobile Condition Badge
+    ========================================================= */
+
+ @media (max-width: 575px) {
+
+     #top-selling-grid .product-condition {
+         top: 8px;
+         right: 8px;
+         padding: 4px 7px;
+         font-size: 0.6rem;
+     }
+
+     #top-selling-grid .product-card-img {
+         height: 160px;
+     }
+ }

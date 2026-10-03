@@ -1,0 +1,40 @@
+# ==========================================
+# Sheiba Arcade - Frontend .htaccess
+# ==========================================
+
+RewriteEngine On
+
+# Canonical host: force apex (sheiba.lk), no www
+RewriteCond %{HTTP_HOST} ^www\.sheiba\.lk$ [NC]
+RewriteRule ^(.*)$ https://sheiba.lk/$1 [L,R=301]
+
+# Force HTTPS (skip on localhost — XAMPP has no SSL by default)
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP_HOST} !=localhost
+RewriteCond %{HTTP_HOST} !=127.0.0.1
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# --------------------------------------------------
+# Do not rewrite existing files or directories
+# --------------------------------------------------
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# --------------------------------------------------
+# Clean URLs for HTML pages
+# --------------------------------------------------
+
+RewriteRule ^$ index.html [L]
+
+RewriteRule ^product/?$ product.html [L]
+RewriteRule ^category/?$ category.html [L]
+RewriteRule ^login/?$ login.html [L]
+RewriteRule ^signup/?$ signup.html [L]
+RewriteRule ^cart/?$ cart.html [L]
+RewriteRule ^admin/?$ admin.html [L]
+
+# --------------------------------------------------
+# Prevent directory listing
+# --------------------------------------------------
+Options -Indexes

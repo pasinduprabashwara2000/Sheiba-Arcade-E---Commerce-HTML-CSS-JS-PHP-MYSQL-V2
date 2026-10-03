@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>My Cart | Sheiba Arcade</title>
+</head>
+<body>
+<!-- ================= DESKTOP / TABLET NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar d-none d-lg-flex">
+    <div class="container">
+        <a class="navbar-brand title" href="index.html">Sheiba Arcade</a>
+        <div class="collapse navbar-collapse" id="basic-navbar-nav">
+            <ul class="navbar-nav mx-auto custom-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Desktop Computers</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="category.html?cat=NEWCOMPUTERS&amp;title=Brand%20New%20Desktop%20Computers">Brand New Desktop Computers</a></li>
+                        <li><a class="dropdown-item" href="category.html?cat=USEDCOMPUTERS&amp;title=Used%20Desktop%20Computers">Used Desktop Computers</a></li>
+                        <li><a class="dropdown-item" href="category.html?cat=USEDGAMINGCOMPUTERS&amp;title=Used%20Gaming%20Computers">Used Gaming Computers</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Monitors</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="category.html?cat=NEWMONITORS&amp;title=Brand%20New%20Monitors">Brand New Monitors</a></li>
+                        <li><a class="dropdown-item" href="category.html?cat=USEDMONITORS&amp;title=Used%20Monitors">Used Monitors</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Laptops</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="category.html?cat=NEWLAPTOPS&amp;title=Brand%20New%20Laptops">Brand New Laptops</a></li>
+                        <li><a class="dropdown-item" href="category.html?cat=USEDLAPTOPS&amp;title=Used%20Laptops">Used Laptops</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown components-dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Computer Components</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <div class="components-menu">
+                                <div class="component-row"><span class="component-label">Processors (CPU)</span><div class="condition-links"><a class="condition-btn condition-new" href="category.html?cat=PROCESSORS&amp;cond=new&amp;title=Brand%20New%20Processors%20(CPU)">Brand New</a><a class="condition-btn condition-used" href="category.html?cat=PROCESSORS&amp;cond=used&amp;title=Used%20Processors%20(CPU)">Used</a></div></div>
+                                <div class="component-row"><span class="component-label">Graphics Cards (GPU)</span><div class="condition-links"><a class="condition-btn condition-new" href="category.html?cat=GRAPHICSCARD&amp;cond=new&amp;title=Brand%20New%20Graphics%20Cards%20(GPU)">Brand New</a><a class="condition-btn condition-used" href="category.html?cat=GRAPHICSCARD&amp;cond=used&amp;title=Used%20Graphics%20Cards%20(GPU)">Used</a></div></div>
+                                <div class="component-row"><span class="component-label">Motherboards</span><div class="condition-links"><a class="condition-btn condition-new" href="category.html?cat=MOTHERBOARD&amp;cond=new&amp;title=Brand%20New%20Motherboards">Brand New</a><a class="condition-btn condition-used" href="category.html?cat=MOTHERBOARD&amp;cond=used&amp;title=Used%20Motherboards">Used</a></div></div>
+                                <div class="component-row"><span class="component-label">RAM Modules</span><div class="condition-links"><a class="condition-btn condition-new" href="category.html?cat=RAM&amp;cond=new&amp;title=Brand%20New%20RAM%20Modules">Brand New</a><a class="condition-btn condition-used" href="category.html?cat=RAM&amp;cond=used&amp;title=Used%20RAM%20Modules">Used</a></div></div>
+                                <div class="component-row"><span class="component-label">Storage (HDD/SSD)</span><div class="condition-links"><a class="condition-btn condition-new" href="category.html?cat=STORAGE&amp;cond=new&amp;title=Brand%20New%20Storage%20(HDD/SSD)">Brand New</a><a class="condition-btn condition-used" href="category.html?cat=STORAGE&amp;cond=used&amp;title=Used%20Storage%20(HDD/SSD)">Used</a></div></div>
+                                <div class="component-row"><span class="component-label">Power Supplies (PSU)</span><div class="condition-links"><a class="condition-btn condition-new" href="category.html?cat=POWERSUPPLY&amp;cond=new&amp;title=Brand%20New%20Power%20Supplies%20(PSU)">Brand New</a><a class="condition-btn condition-used" href="category.html?cat=POWERSUPPLY&amp;cond=used&amp;title=Used%20Power%20Supplies%20(PSU)">Used</a></div></div>
+                                <div class="component-row"><span class="component-label">Cooling Systems</span><div class="condition-links"><a class="condition-btn condition-new" href="category.html?cat=COOLINGSYSTEMS&amp;cond=new&amp;title=Brand%20New%20Cooling%20Systems">Brand New</a><a class="condition-btn condition-used" href="category.html?cat=COOLINGSYSTEMS&amp;cond=used&amp;title=Used%20Cooling%20Systems">Used</a></div></div>
+                                <div class="component-row"><span class="component-label">PC Cases</span><div class="condition-links"><a class="condition-btn condition-new" href="category.html?cat=PCCASES&amp;cond=new&amp;title=Brand%20New%20PC%20Cases">Brand New</a><a class="condition-btn condition-used" href="category.html?cat=PCCASES&amp;cond=used&amp;title=Used%20PC%20Cases">Used</a></div></div>
+                                <div class="component-row"><span class="component-label">Accessories</span><div class="condition-links"><a class="condition-btn condition-new" href="category.html?cat=ACCESSORIES&amp;cond=new&amp;title=Brand%20New%20Accessories">Brand New</a><a class="condition-btn condition-used" href="category.html?cat=ACCESSORIES&amp;cond=used&amp;title=Used%20Accessories">Used</a></div></div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div id="desktop-auth-slot" class="d-flex align-items-center"></div>
+        </div>
+    </div>
+</nav>
+
+<!-- ================= MOBILE TOPBAR ================= -->
+<div class="mobile-topbar d-flex d-lg-none">
+    <a href="index.html" class="mobile-brand">Sheiba Arcade</a>
+    <button class="mobile-hamburger" id="mobile-hamburger" aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+    </button>
+</div>
+
+<!-- ================= FLYOUT OVERLAY + PANEL ================= -->
+<div class="flyout-overlay" id="flyout-overlay" aria-hidden="true"></div>
+
+<nav class="flyout-panel" id="flyout-panel" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <div class="flyout-header">
+        <a href="index.html" class="flyout-brand">Sheiba Arcade</a>
+        <button class="flyout-close-btn" id="flyout-close-btn" aria-label="Close menu">&#x2715;</button>
+    </div>
+
+    <div class="flyout-nav-body">
+        <a class="flyout-link" href="index.html">Home</a>
+
+        <div class="flyout-divider"></div>
+        <span class="flyout-section-label">Desktop Computers</span>
+        <a class="flyout-sub-link" href="category.html?cat=NEWCOMPUTERS&amp;title=Brand%20New%20Desktop%20Computers">Brand New Desktops</a>
+        <a class="flyout-sub-link" href="category.html?cat=USEDCOMPUTERS&amp;title=Used%20Desktop%20Computers">Used Desktops</a>
+        <a class="flyout-sub-link" href="category.html?cat=USEDGAMINGCOMPUTERS&amp;title=Used%20Gaming%20Computers">Used Gaming PCs</a>
+
+        <div class="flyout-divider"></div>
+        <span class="flyout-section-label">Monitors</span>
+        <a class="flyout-sub-link" href="category.html?cat=NEWMONITORS&amp;title=Brand%20New%20Monitors">Brand New Monitors</a>
+        <a class="flyout-sub-link" href="category.html?cat=USEDMONITORS&amp;title=Used%20Monitors">Used Monitors</a>
+
+        <div class="flyout-divider"></div>
+        <span class="flyout-section-label">Laptops</span>
+        <a class="flyout-sub-link" href="category.html?cat=NEWLAPTOPS&amp;title=Brand%20New%20Laptops">Brand New Laptops</a>
+        <a class="flyout-sub-link" href="category.html?cat=USEDLAPTOPS&amp;title=Used%20Laptops">Used Laptops</a>
+
+        <div class="flyout-divider"></div>
+        <button class="flyout-accordion-btn" id="flyout-accordion-btn" aria-expanded="false">
+            <span style="color:white">Computer Components</span>
+            <span class="flyout-chevron" id="flyout-chevron">&#9660;</span>
+        </button>
+
+        <div class="flyout-components" id="flyout-components" style="display:none;">
+            <div class="component-row"><span class="component-label">Processors (CPU)</span><div class="condition-links"><a class="condition-btn condition-new" href="category.html?cat=PROCESSORS&amp;cond=new&amp;title=Brand%20New%20Processors%20(CPU)">Brand New</a><a class="condition-btn condition-used" href="category.html?cat=PROCESSORS&amp;cond=used&amp;title=Used%20Processors%20(CPU)">Used</a></div></div>
+            <div class="component-row"><span class="component-label">Graphics Cards (GPU)</span><div class="condition-links"><a class="condition-btn condition-new" href="category.html?cat=GRAPHICSCARD&amp;cond=new&amp;title=Brand%20New%20Graphics%20Cards%20(GPU)">Brand New</a><a class="condition-btn condition-used" href="category.html?cat=GRAPHICSCARD&amp;cond=used&amp;title=Used%20Graphics%20Cards%20(GPU)">Used</a></div></div>
+            <div class="component-row"><span class="component-label">Motherboards</span><div class="condition-links"><a class="condition-btn condition-new" href="category.html?cat=MOTHERBOARD&amp;cond=new&amp;title=Brand%20New%20Motherboards">Brand New</a><a class="condition-btn condition-used" href="category.html?cat=MOTHERBOARD&amp;cond=used&amp;title=Used%20Motherboards">Used</a></div></div>
+            <div class="component-row"><span class="component-label">RAM Modules</span><div class="condition-links"><a class="condition-btn condition-new" href="category.html?cat=RAM&amp;cond=new&amp;title=Brand%20New%20RAM%20Modules">Brand New</a><a class="condition-btn condition-used" href="category.html?cat=RAM&amp;cond=used&amp;title=Used%20RAM%20Modules">Used</a></div></div>
+            <div class="component-row"><span class="component-label">Storage (HDD/SSD)</span><div class="condition-links"><a class="condition-btn condition-new" href="category.html?cat=STORAGE&amp;cond=new&amp;title=Brand%20New%20Storage%20(HDD/SSD)">Brand New</a><a class="condition-btn condition-used" href="category.html?cat=STORAGE&amp;cond=used&amp;title=Used%20Storage%20(HDD/SSD)">Used</a></div></div>
+            <div class="component-row"><span class="component-label">Power Supplies (PSU)</span><div class="condition-links"><a class="condition-btn condition-new" href="category.html?cat=POWERSUPPLY&amp;cond=new&amp;title=Brand%20New%20Power%20Supplies%20(PSU)">Brand New</a><a class="condition-btn condition-used" href="category.html?cat=POWERSUPPLY&amp;cond=used&amp;title=Used%20Power%20Supplies%20(PSU)">Used</a></div></div>
+            <div class="component-row"><span class="component-label">Cooling Systems</span><div class="condition-links"><a class="condition-btn condition-new" href="category.html?cat=COOLINGSYSTEMS&amp;cond=new&amp;title=Brand%20New%20Cooling%20Systems">Brand New</a><a class="condition-btn condition-used" href="category.html?cat=COOLINGSYSTEMS&amp;cond=used&amp;title=Used%20Cooling%20Systems">Used</a></div></div>
+            <div class="component-row"><span class="component-label">PC Cases</span><div class="condition-links"><a class="condition-btn condition-new" href="category.html?cat=PCCASES&amp;cond=new&amp;title=Brand%20New%20PC%20Cases">Brand New</a><a class="condition-btn condition-used" href="category.html?cat=PCCASES&amp;cond=used&amp;title=Used%20PC%20Cases">Used</a></div></div>
+            <div class="component-row"><span class="component-label">Accessories</span><div class="condition-links"><a class="condition-btn condition-new" href="category.html?cat=ACCESSORIES&amp;cond=new&amp;title=Brand%20New%20Accessories">Brand New</a><a class="condition-btn condition-used" href="category.html?cat=ACCESSORIES&amp;cond=used&amp;title=Used%20Accessories">Used</a></div></div>
+        </div>
+
+        <div class="flyout-divider"></div>
+        <a class="flyout-link" href="admin.html" id="flyout-manage-products" style="display:none;">Manage Products</a>
+        <a class="flyout-link" href="admin-top-selling.html" id="flyout-manage-top-selling" style="display:none;">Manage Top Selling Products</a>
+        <div class="flyout-divider" id="flyout-manage-products-divider" style="display:none;"></div>
+    </div>
+
+    <div class="flyout-footer" id="flyout-footer-slot"></div>
+</nav>
+
+<div id="alert-slot"></div>
+<main class="container cart-page my-5">
+    <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-4">
+        <h3 class="fw-bold mb-0">My Cart</h3>
+        <a href="index.html" class="text-decoration-none">&larr; Continue shopping</a>
+    </div>
+
+    <div id="cart-loading" class="text-center py-5"><div class="spinner-border" role="status"></div></div>
+
+    <div id="cart-empty" class="text-center py-5" style="display:none;">
+        <i class="bi bi-cart-x display-3 text-muted"></i>
+        <p class="mt-3 text-muted">Your cart is empty.</p>
+        <a href="index.html" class="btn btn-dark">Browse products</a>
+    </div>
+
+    <div id="cart-content" class="row g-4" style="display:none;">
+        <div class="col-lg-8">
+            <div id="cart-items" class="vstack gap-3"></div>
+            <button type="button" id="cart-clear" class="btn btn-link text-danger mt-3 px-0">Clear cart</button>
+        </div>
+        <div class="col-lg-4">
+            <div class="card cart-summary shadow-sm">
+                <div class="card-body p-4">
+                    <h5 class="fw-bold mb-3">Order summary</h5>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span>Items</span><span id="cart-items-count">0</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="fw-semibold">Total</span>
+                        <span class="fs-4 fw-bold text-success" id="cart-total">Rs. 0</span>
+                    </div>
+                    <p class="small text-danger mt-2 mb-0" id="cart-soldout-note" style="display:none;">Out-of-stock items are not included in the total.</p>
+                    <p class="small text-muted mt-3 mb-0">Online checkout isn't available yet. To order, call +94 775482083 or visit our shop in Wadduwa &mdash; this cart helps you see your total.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>

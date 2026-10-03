@@ -1,0 +1,869 @@
+/* =========================================================
+   Sheiba Arcade - Global Styles
+   ========================================================= */
+
+:root {
+    --primary: #4f46e5;
+    --primary-dark: #4338ca;
+    --primary-light: #f0effe;
+
+    --black: #000000;
+    --dark: #111111;
+    --dark-soft: #1a1a1a;
+
+    --white: #ffffff;
+    --light: #f8f8f8;
+    --border: #e8e8e8;
+
+    --text: #333333;
+    --muted: #777777;
+
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+
+    --shadow-sm: 0 2px 12px rgba(0, 0, 0, 0.06);
+    --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.10);
+    --shadow-lg: 0 12px 30px rgba(0, 0, 0, 0.14);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    color: var(--text);
+    background: var(--white);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: "Poppins", sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+:focus-visible {
+    outline: 3px solid rgba(79, 70, 229, 0.35);
+    outline-offset: 2px;
+}
+
+/* =========================================================
+   Navbar
+   ========================================================= */
+
+.navbar {
+    background-color: var(--black) !important;
+    padding: 8px 12px;
+    border-bottom: 1px solid #222;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+    z-index: 1030;
+}
+
+.navbar .container {
+    padding: 0 12px;
+}
+
+.navbar .navbar-brand.title {
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--white) !important;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: color 0.25s ease, transform 0.2s ease;
+}
+
+.navbar .navbar-brand.title:hover {
+    color: var(--primary) !important;
+    transform: scale(1.03);
+}
+
+.custom-nav {
+    align-items: center;
+}
+
+.custom-nav .nav-link {
+    color: var(--white) !important;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0 4px;
+    padding: 6px 12px !important;
+    border-radius: var(--radius-sm);
+    transition: all 0.25s ease;
+}
+
+.custom-nav .nav-link:hover,
+.custom-nav .nav-link.active,
+.custom-nav .nav-link.show {
+    color: var(--primary) !important;
+    background-color: var(--primary-light);
+}
+
+/* =========================================================
+   Navbar Dropdown
+   ========================================================= */
+
+.navbar .dropdown-menu {
+    background-color: var(--white);
+    border: 1px solid #ebebeb;
+    border-radius: var(--radius-md);
+    padding: 6px;
+    margin-top: 6px;
+    box-shadow: var(--shadow-md);
+}
+
+.navbar .dropdown-item {
+    color: #3a3a3a;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 9px 14px;
+    border-radius: var(--radius-sm);
+    transition: all 0.2s ease;
+}
+
+.navbar .dropdown-item:hover,
+.navbar .dropdown-item:focus {
+    background-color: var(--primary-light);
+    color: var(--primary);
+}
+
+/* =========================================================
+   Navbar Buttons
+   ========================================================= */
+
+.navbar button {
+    font-weight: 600;
+    font-size: 13px;
+    padding: 7px 18px;
+    border: none;
+    border-radius: var(--radius-sm);
+    transition: all 0.25s ease;
+}
+
+.navbar button:first-of-type {
+    background-color: #f4f4f5;
+    color: #1a1a1a;
+    border: 1px solid #e4e4e7;
+}
+
+.navbar button:first-of-type:hover {
+    background-color: #e4e4e7;
+}
+
+.navbar button:last-of-type {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.navbar button:last-of-type:hover {
+    background-color: var(--primary-dark);
+}
+
+/* =========================================================
+   Computer Components Dropdown
+   ========================================================= */
+
+.components-dropdown .dropdown-menu {
+    min-width: 500px;
+    padding: 8px 0 !important;
+}
+
+.components-menu {
+    padding: 4px 0;
+}
+
+.component-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 8px 16px;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background-color 0.2s ease;
+}
+
+.component-row:last-child {
+    border-bottom: none;
+}
+
+.component-row:hover {
+    background-color: #f8f7ff;
+}
+
+.component-label {
+    flex: 1;
+    color: #111;
+    font-size: 13px;
+    font-weight: 500;
+    white-space: nowrap;
+    padding-right: 16px;
+}
+
+.condition-links {
+    display: flex;
+    gap: 6px;
+    flex-shrink: 0;
+}
+
+.condition-btn {
+    display: inline-block;
+    padding: 3px 11px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.6;
+    white-space: nowrap;
+    text-decoration: none !important;
+    transition: all 0.2s ease;
+}
+
+.condition-new {
+    background-color: var(--primary-light);
+    color: var(--primary) !important;
+    border: 1px solid #c7c2f8;
+}
+
+.condition-new:hover {
+    background-color: var(--primary);
+    color: var(--white) !important;
+    border-color: var(--primary);
+}
+
+.condition-used {
+    background-color: #f4f4f5;
+    color: #71717a !important;
+    border: 1px solid #d4d4d8;
+}
+
+.condition-used:hover {
+    background-color: #71717a;
+    color: var(--white) !important;
+    border-color: #71717a;
+}
+
+/* =========================================================
+   Mobile Topbar
+   ========================================================= */
+
+.mobile-topbar {
+    background-color: var(--black);
+    min-height: 60px;
+    padding: 10px 16px;
+    border-bottom: 1px solid #222;
+    box-shadow: var(--shadow-sm);
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Poppins", sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 1090;
+}
+
+.mobile-brand {
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.mobile-brand:hover {
+    color: var(--primary);
+}
+
+.mobile-hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 6px;
+    background: transparent;
+    border: none;
+}
+
+.mobile-hamburger span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: var(--white);
+    border-radius: 2px;
+    transition: background-color 0.2s ease;
+}
+
+.mobile-hamburger:hover span {
+    background-color: var(--primary);
+}
+
+/* =========================================================
+   Mobile Flyout Overlay
+   ========================================================= */
+
+.flyout-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.28s ease;
+    z-index: 1100;
+}
+
+.flyout-overlay.flyout-open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* =========================================================
+   Mobile Flyout Panel
+   ========================================================= */
+
+.flyout-panel {
+    position: fixed;
+    top: 0;
+    right: -320px;
+    width: min(320px, 88vw);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--black);
+    box-shadow: -5px 0 30px rgba(0, 0, 0, 0.25);
+    transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1110;
+}
+
+.flyout-panel.flyout-open {
+    right: 0;
+}
+
+.flyout-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 18px 13px;
+    border-bottom: 1px solid #252525;
+    flex-shrink: 0;
+}
+
+.flyout-brand {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.flyout-brand:hover {
+    color: var(--primary);
+}
+
+.flyout-close-btn {
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    border: none;
+    border-radius: 6px;
+    background: transparent;
+    color: var(--white);
+    font-size: 20px;
+    line-height: 1;
+    transition: all 0.2s ease;
+}
+
+.flyout-close-btn:hover {
+    color: var(--primary);
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* =========================================================
+   Flyout Navigation
+   ========================================================= */
+
+.flyout-nav-body {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px 0;
+}
+
+.flyout-link {
+    display: block;
+    padding: 11px 20px;
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.flyout-link:hover {
+    color: var(--primary);
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+.flyout-section-label {
+    display: block;
+    padding: 6px 20px 3px;
+    color: #c8c2ff;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+.flyout-sub-link {
+    display: block;
+    padding: 9px 20px 9px 28px;
+    color: #dddddd;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.flyout-sub-link:hover {
+    color: var(--primary);
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+.flyout-divider {
+    height: 1px;
+    margin: 8px 16px;
+    background-color: #252525;
+}
+
+/* =========================================================
+   Flyout Components Accordion
+   ========================================================= */
+
+.flyout-accordion-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 11px 20px;
+    border: none;
+    background: transparent;
+    color: var(--white);
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: left;
+    transition: all 0.2s ease;
+}
+
+.flyout-accordion-btn:hover,
+.flyout-accordion-btn.open {
+    color: var(--primary);
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+.flyout-chevron {
+    color: #999;
+    font-size: 10px;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.flyout-accordion-btn.open .flyout-chevron {
+    color: var(--primary);
+}
+
+.flyout-components {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+.flyout-components .component-row {
+    padding: 8px 16px 8px 24px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.flyout-components .component-label {
+    color: #ddd;
+}
+
+.flyout-components .component-row:hover {
+    background-color: rgba(255, 255, 255, 0.04);
+}
+
+/* =========================================================
+   Flyout Footer
+   ========================================================= */
+
+.flyout-footer {
+    padding: 14px 16px;
+    border-top: 1px solid #252525;
+    flex-shrink: 0;
+}
+
+/* =========================================================
+   Forms
+   ========================================================= */
+
+.form-control,
+.form-select {
+    border-radius: var(--radius-sm);
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 0.2rem rgba(79, 70, 229, 0.12);
+}
+
+/* =========================================================
+   Product Filters
+   ========================================================= */
+
+.price-filter,
+.subcategory-filter {
+    margin-bottom: 15px;
+    border-radius: var(--radius-lg);
+}
+
+.price-filter .card-body,
+.subcategory-filter .card-body {
+    padding: 12px;
+}
+
+.price-filter h6,
+.subcategory-filter h6 {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.price-filter label,
+.subcategory-filter label,
+.subcategory-filter .form-check-label {
+    font-size: 12px;
+}
+
+.price-range-display {
+    padding: 6px !important;
+    font-size: 12px;
+}
+
+/* =========================================================
+   Product Grid
+   ========================================================= */
+
+.product-grid-mobile {
+    row-gap: 12px !important;
+}
+
+.product-card {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.product-card .card-body {
+    padding: 14px;
+}
+
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.product-card h6 {
+    line-height: 1.4;
+}
+
+.product-card .btn {
+    border-radius: 10px;
+}
+
+/* =========================================================
+   Category Page
+   ========================================================= */
+
+.category-title {
+    margin: 20px 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.description-text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.pagination-center {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* =========================================================
+   Footer
+   ========================================================= */
+
+.footer {
+    margin-top: 20px;
+    padding: 40px 20px 20px;
+    background-color: #111;
+    color: #ccc;
+    font-family: "Poppins", sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-brand h3 {
+    margin-bottom: 8px;
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.footer-brand p {
+    margin-bottom: 5px;
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+.footer-links h4,
+.footer-social h4 {
+    margin-bottom: 10px;
+    color: var(--white);
+    font-size: 1rem;
+}
+
+.footer-links ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 6px;
+}
+
+.footer-links ul li a {
+    color: #ccc;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+
+.footer-links ul li a:hover {
+    color: var(--primary);
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: var(--white);
+    color: #111;
+    transition: all 0.25s ease;
+}
+
+.social-icons a:hover {
+    background-color: var(--primary);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #333;
+    color: #777;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+/* =========================================================
+   Scrollbar
+   ========================================================= */
+
+.flyout-nav-body::-webkit-scrollbar {
+    width: 5px;
+}
+
+.flyout-nav-body::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.flyout-nav-body::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 10px;
+}
+
+/* =========================================================
+   Responsive
+   ========================================================= */
+
+@media (max-width: 991px) {
+    .components-dropdown .dropdown-menu {
+        min-width: 100%;
+    }
+
+    .component-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .component-label {
+        padding-right: 0;
+    }
+
+    .product-grid-mobile .col-md-6,
+    .product-grid-mobile .col-lg-4,
+    .product-grid-mobile .col-6 {
+        width: 50%;
+        padding: 6px;
+    }
+
+    .product-card .card-body {
+        padding: 10px;
+    }
+
+    .product-card img {
+        height: 130px;
+    }
+
+    .product-card h6 {
+        margin-bottom: 5px;
+        font-size: 13px;
+    }
+
+    .product-card p {
+        display: none;
+    }
+
+    .product-card .text-primary {
+        font-size: 13px;
+    }
+
+    .product-card small {
+        font-size: 11px;
+    }
+
+    .product-card .btn {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    .pagination {
+        flex-wrap: wrap;
+    }
+
+    .page-link {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 575px) {
+    .navbar .container {
+        padding: 0 8px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 22px;
+    }
+
+    .category-title {
+        font-size: 1.35rem;
+    }
+
+    .flyout-panel {
+        width: min(300px, 88vw);
+    }
+}
+/* =========================================================
+   Cart (navbar button, badge, cart page)
+   ========================================================= */
+
+.nav-cart-btn { padding: 6px 12px; }
+
+.cart-badge {
+    position: absolute;
+    top: -6px;
+    right: -8px;
+    min-width: 19px;
+    height: 19px;
+    padding: 0 5px;
+    border-radius: 10px;
+    background: #e53935;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 19px;
+    text-align: center;
+}
+
+.mobile-cart {
+    position: relative;
+    margin-left: auto;
+    margin-right: 14px;
+    color: var(--white);
+    font-size: 22px;
+    line-height: 1;
+}
+
+.mobile-cart:hover { color: var(--primary); }
+
+.cart-page { font-family: "Poppins", sans-serif; }
+
+.cart-item-img {
+    width: 84px;
+    height: 84px;
+    object-fit: cover;
+    border-radius: 8px;
+    background: #f1f1f1;
+}
+
+.cart-qty { display: inline-flex; align-items: center; gap: 6px; }
+.cart-qty button { width: 30px; height: 30px; padding: 0; line-height: 1; }
+.cart-qty span { min-width: 26px; text-align: center; font-weight: 600; }
+
+.cart-summary {
+    position: sticky;
+    top: 90px;
+    border-radius: 14px;
+}
